@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Quiz Completed!</h1>
+
+        <h2 id="finalScore">Your Score: 0</h2>
+
+        <button id="restartBtn">Try Again</button>
+
+    </div>
+
+    <script>
+
+        let finalScore = document.querySelector("#finalScore");
+
+        let score = localStorage.getItem("score");
+
+        finalScore.textContent = "Your Score: " + score;
+
+        let restartBtn = document.querySelector("#restartBtn");
+
+        restartBtn.addEventListener("click", function() {
+            window.location.href = "index.html";
+        });
+
+    </script>
+
+</body>
+</html>

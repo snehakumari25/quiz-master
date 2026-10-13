@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Interactive Quiz Master</h1>
+        <p>Test your JavaScript knowledge!</p>
+
+        <button id="startBtn">Start Quiz</button>
+    </div>
+
+    <script>
+        const startBtn = document.querySelector("#startBtn");
+
+        startBtn.addEventListener("click", function() {
+            window.location.href = "quiz.html";
+        });
+    </script>
+
+</body>
+</html>
